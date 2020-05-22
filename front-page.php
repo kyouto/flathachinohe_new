@@ -28,114 +28,22 @@
       <a href="/news_list" class="btn">VIEW MORE</a>
     </div>
     <ul>
-      <li>
-        <a href="/news_detail">
-          <p class="category">NEWS</p>
-          <p class="date">2020.4.10</p>
-          <div class="img">
-            <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/img/dummy01.png" alt="">
-            <div class="img_hover"><p>more</p></div>
-          </div>
-          <h3>ご来場者様向け駐車場に関するご案内</h3>
-          <p class="text">FLAT HACHINOHEの駐車場について、ご案内をさせていただきます。 当館では、貸切利用および一般滑走を […]</p>
-        </a>
-      </li>
-      <li>
-        <a href="/news_detail">
-          <p class="category">NEWS</p>
-          <p class="date">2020.4.6</p>
-          <div class="img">
-            <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/img/dummy01.png" alt="">
-            <div class="img_hover"><p>more</p></div>
-          </div>
-          <h3>アイスリンク一般滑走利用に関するご案内</h3>
-          <p class="text">FLAT HACHINOHEの一般滑走利用について、ご案内をさせていただきます。 新型コロナウイルス感染拡大防 […]</p>
-        </a>
-      </li>
-      <li>
-        <a href="/news_detail">
-          <p class="category">NEWS</p>
-          <p class="date">2020.4.6</p>
-          <div class="img">
-            <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/img/dummy01.png" alt="">
-            <div class="img_hover"><p>more</p></div>
-          </div>
-          <h3>アイスリンク貸切使用予約（一般枠・通常料金）に関するご案内</h3>
-          <p class="text">FLAT HACHINOHEの4月施設予約方法について、ご案内をさせていただきます。 アイスリンクの貸切使用予 […]</p>
-        </a>
-      </li>
-      <li>
-        <a href="/news_detail">
-          <p class="category">NEWS</p>
-          <p class="date">2020.4.10</p>
-          <div class="img">
-            <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/img/dummy01.png" alt="">
-            <div class="img_hover"><p>more</p></div>
-          </div>
-          <h3>ご来場者様向け駐車場に関するご案内</h3>
-          <p class="text">FLAT HACHINOHEの駐車場について、ご案内をさせていただきます。 当館では、貸切利用および一般滑走を […]</p>
-        </a>
-      </li>
-      <li>
-        <a href="/news_detail">
-          <p class="category">NEWS</p>
-          <p class="date">2020.4.6</p>
-          <div class="img">
-            <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/img/dummy01.png" alt="">
-            <div class="img_hover"><p>more</p></div>
-          </div>
-          <h3>アイスリンク一般滑走利用に関するご案内</h3>
-          <p class="text">FLAT HACHINOHEの一般滑走利用について、ご案内をさせていただきます。 新型コロナウイルス感染拡大防 […]</p>
-        </a>
-      </li>
-      <li>
-        <a href="/news_detail">
-          <p class="category">NEWS</p>
-          <p class="date">2020.4.6</p>
-          <div class="img">
-            <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/img/dummy01.png" alt="">
-            <div class="img_hover"><p>more</p></div>
-          </div>
-          <h3>アイスリンク貸切使用予約（一般枠・通常料金）に関するご案内</h3>
-          <p class="text">FLAT HACHINOHEの4月施設予約方法について、ご案内をさせていただきます。 アイスリンクの貸切使用予 […]</p>
-        </a>
-      </li>
-      <li>
-        <a href="/news_detail">
-          <p class="category">NEWS</p>
-          <p class="date">2020.4.10</p>
-          <div class="img">
-            <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/img/dummy01.png" alt="">
-            <div class="img_hover"><p>more</p></div>
-          </div>
-          <h3>ご来場者様向け駐車場に関するご案内</h3>
-          <p class="text">FLAT HACHINOHEの駐車場について、ご案内をさせていただきます。 当館では、貸切利用および一般滑走を […]</p>
-        </a>
-      </li>
-      <li>
-        <a href="/news_detail">
-          <p class="category">NEWS</p>
-          <p class="date">2020.4.6</p>
-          <div class="img">
-            <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/img/dummy01.png" alt="">
-            <div class="img_hover"><p>more</p></div>
-          </div>
-          <h3>アイスリンク一般滑走利用に関するご案内</h3>
-          <p class="text">FLAT HACHINOHEの一般滑走利用について、ご案内をさせていただきます。 新型コロナウイルス感染拡大防 […]</p>
-        </a>
-      </li>
-      <li>
-        <a href="/news_detail">
-          <p class="category">NEWS</p>
-          <p class="date">2020.4.6</p>
-          <div class="img">
-            <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/img/dummy01.png" alt="">
-            <div class="img_hover"><p>more</p></div>
-          </div>
-          <h3>アイスリンク貸切使用予約（一般枠・通常料金）に関するご案内</h3>
-          <p class="text">FLAT HACHINOHEの4月施設予約方法について、ご案内をさせていただきます。 アイスリンクの貸切使用予 […]</p>
-        </a>
-      </li>
+      <?php $news_posts_query = get_news_posts(6); ?>
+      <?php foreach($news_posts_query->posts as $post): ?>
+          <?php $category = get_the_category(); ?>
+          <li>
+            <a href="<?php the_permalink(); ?>">
+              <p class="category"><?php echo $category[0]->name; ?></p>
+              <p class="date"><?php the_time('Y.m.d'); ?></p>
+              <div class="img">
+                <img src="<?php echo get_thumbnail_url(); ?>" alt="">
+                <div class="img_hover"><p>more</p></div>
+              </div>
+              <h3><?php the_title(); ?></h3>
+              <p class="text"><?php echo get_short_str($post->post_content); ?></p>
+            </a>
+          </li>
+      <?php endforeach; ?>
     </ul>
   </section><!-- /news -->
   

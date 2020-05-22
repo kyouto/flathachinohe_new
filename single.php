@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: ニュース一覧
+Template Name: ニュース詳細
 */
 ?>
 
@@ -20,33 +20,19 @@ Template Name: ニュース一覧
 
 <main id="fullpage">
   
-  <section class="news wrapper">
-    <div class="ttl_box">
-      <h2 class="ttl1"><span>NEWS</span>ニュース</h2>
+  <section class="news news_detail wrapper">
+    <div class="ttl_box"></div>
+    <div class="news_box">
+      <?php $category = get_the_category(); ?>
+      <h2><?php the_title(); ?></h2>
+      <div class="text_right">
+        <p class="category"><?php echo $category[0]->name; ?></p>
+        <p class="date"><?php the_time('Y.m.d'); ?></p>
+      </div>
+      <img src="<?php echo get_thumbnail_url(); ?>" alt="">
+      <p><?php echo apply_filters('the_content', $post->post_content); ?></p>
+      <a href="/news_list" class="back_btn">BACK</a>
     </div>
-    <ul>
-      <?php $news_posts_query = get_news_posts(12); ?>
-      <?php foreach($news_posts_query->posts as $post): ?>
-          <?php $category = get_the_category(); ?>
-          <li>
-            <a href="<?php the_permalink(); ?>">
-              <p class="category"><?php echo $category[0]->name; ?></p>
-              <p class="date"><?php the_time('Y.m.d'); ?></p>
-              <div class="img">
-                <img src="<?php echo get_thumbnail_url(); ?>" alt="">
-                <div class="img_hover"><p>more</p></div>
-              </div>
-              <h3><?php the_title(); ?></h3>
-              <p class="text"><?php echo get_short_str($post->post_content); ?></p>
-            </a>
-          </li>
-      <?php endforeach; ?>
-    </ul>
-    <?php
-        if ( function_exists('pagination') ) :
-            pagination( $news_posts_query->max_num_pages, get_query_var('paged') );
-        endif;
-    ?>
   </section><!-- /news -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
