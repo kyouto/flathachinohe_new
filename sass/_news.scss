@@ -1,0 +1,117 @@
+.sub .news {
+  margin-bottom: 100px;
+  @include mq(s) {
+    margin-bottom: 50px;
+  }
+  .pagination {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+    @include mq(s) {
+      margin-top: 30px;
+    }
+    li {
+      margin: 0 3px;
+      a {
+        width: 40px;
+        padding: 11px 0;
+        font-family: poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        @include mq(s) {
+          width: 30px;
+          padding: 6px 0;
+        }
+      }
+      &.active a {
+        background-color: #000;
+        color: #fff;
+        pointer-events: none;
+      }
+    }
+  }
+  //detail
+  &_detail {
+    .ttl_box {
+      margin: 0;
+    }
+    .news_box {
+      h2 {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 70px;
+        @include mq(s) {
+          font-size: 18px;
+          line-height: 24px;
+          text-align: left;
+          margin-bottom: 20px;
+        }
+      }
+      .text_right {
+        text-align: right;
+        margin-bottom: 12px;
+        .category {
+          width: 100px;
+          padding: 4px 0;
+          background-color: #000;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 100%;
+          text-align: center;
+          color: #fff;
+          display: inline-block;
+          margin: 0 !important;
+          @include mq(s) {
+            width: 45px;
+            padding: 3px 0;
+            font-size: 12px;
+          }
+        }
+        .date {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 100%;
+          display: inline-block;
+          margin: 0 0 0 10px !important;
+          @include mq(s) {
+            font-size: 12px;
+            margin: 0 0 0 5px !important;
+          }
+        }
+      }
+      > img {
+        height: auto;
+        border: 1px #ccc solid;
+        box-sizing: border-box;
+        margin-bottom: 80px;
+        @include mq(s) {
+          margin-bottom: 20px;
+        }
+      }
+      > p {
+        line-height: 200%;
+        margin-bottom: 40px;
+        @include mq(s) {
+          margin-bottom: 20px;
+        }
+      }
+      .back_btn {
+        width: 100%;
+        padding: 20px 0;
+        background-color: #000;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        @include mq(s) {
+          padding: 11px 0;
+          font-size: 18px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

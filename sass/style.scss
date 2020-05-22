@@ -1,0 +1,40 @@
+@charset "UTF-8";
+//MediaQuery Var
+$breakpoints: (
+  'sss': 'screen and (max-width: 320px)',
+  'ss': 'screen and (max-width: 480px)',
+  's': 'screen and (max-width: 768px)',
+  'l': 'screen and (min-width: 769px)',
+  'll':'screen and(min-width: 1300px)'
+
+) !default;
+@mixin mq($breakpoint: l) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+//MediaQuery Class
+@mixin responsive($class, $bp: $breakpoints) {
+  #{$class} {
+    @content;
+  }
+  @each $suffix, $value in $bp {
+    @media #{$value} {
+      #{$class}-#{$suffix} {
+        @content;
+      }
+    }
+  }
+}
+@include responsive('.display-none') {
+  display: none !important;
+}
+
+@import "_header";
+@import "_footer";
+@import "_index";
+
+@import "_news";
+@import "_schedule";
+@import "_utility_features";
+@import "_facility_information";

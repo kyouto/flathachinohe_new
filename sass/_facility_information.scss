@@ -1,0 +1,117 @@
+.sub .facility_information {
+  margin-bottom: 100px;
+  @include mq(s) {
+    margin-bottom: 50px;
+  }
+  &_box {
+    display: block;
+    margin: 0;
+    > img {
+      margin-bottom: 80px;
+      @include mq(s) {
+        margin-bottom: 30px;
+      }
+    }
+    .column2 {
+      padding-bottom: 70px;
+      border-bottom: 4px #000 solid;
+      margin-bottom: 80px;
+      @include mq(s) {
+        padding-bottom: 30px;
+        border-width: 3px;
+        margin-bottom: 30px;
+      }
+      > div {
+        margin-top: 60px;
+        @include mq(l) {
+          &:nth-child(-n+2) {
+            margin-top: 0;
+          }
+        }
+        @include mq(s) {
+          margin-top: 20px;
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+        }
+        h4:not(.ttl3) {
+          font-size: 17px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          align-content: center;
+          margin-bottom: 20px;
+          @include mq(s) {
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+          img {
+            width: 20px;
+            margin-right: 10px;
+            @include mq(s) {
+              width: 15px;
+              margin-right: 5px;
+            }
+          }
+        }
+        p {
+          width: 100%;
+          padding: 0;
+          border: none;
+          font-weight: normal;
+          line-height: 30px;
+          margin: 0;
+          @include mq(l) {
+            font-size: 14px;
+          }
+          @include mq(s) {
+            line-height: 24px;
+          }
+        }
+        > img {
+          margin-top: 20px;
+          @include mq(s) {
+            margin-top: 10px;
+          }
+        }
+        > div {
+          display: flex;
+          justify-content: space-between;
+          @include mq(s) {
+            display: block;
+          }
+          p {
+            width: 44%;
+            @include mq(s) {
+              width: 100%;
+            }
+          }
+          img {
+            width: 52%;
+            @include mq(s) {
+              width: 100%;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+    &:nth-of-type(4) .ttl2 {
+      margin-bottom: 50px;
+      @include mq(s) {
+        margin-bottom: 20px;
+      }
+    }
+    &:nth-of-type(5) .column2 {
+      padding: 0;
+      border: none;
+      margin: 0;
+      .ttl2 {
+        margin-bottom: 30px;
+        @include mq(s) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

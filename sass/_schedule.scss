@@ -1,0 +1,115 @@
+.sub .schedule {
+  margin-bottom: 100px;
+  @include mq(s) {
+    margin-bottom: 50px;
+  }
+  .tab {
+    &_btn {
+      display: flex;
+      justify-content: flex-end;
+      li {
+        width: 120px;
+        padding: 16px 0;
+        border: 1px #f2f2f2 solid;
+        border-bottom: none;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: #ccc;
+        cursor: pointer;
+        @include mq(s) {
+          width: 33.33%;
+        }
+        &.active {
+          background-color: #000;
+          border-color: #000;
+          color: #fff;
+        }
+      }
+    }
+    &_item li {
+      &.hide {
+        display: none;
+      }
+      .schedule_ttl {
+        height: 100px;
+        padding-right: 25px;
+        border: 1px #f2f2f2 solid;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        @include mq(s) {
+          height: auto;
+          padding: 15px 0;
+          display: block;
+        }
+        h3 {
+          padding-left: 20px;
+          border-left: 3px #000 solid;
+          font-size: 20px;
+          text-align: left;
+          margin: 0;
+          @include mq(s) {
+            padding-left: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+        }
+        .cat_box {
+          width: 600px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          @include mq(s) {
+            width: 90%;
+            margin: 0 auto;
+          }
+          li {
+            font-size: 13px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            margin: 5px 0 5px 40px;
+            @include mq(s) {
+              font-size: 12px;
+              margin-left: 20px;
+            }
+            &:before {
+              content: "";
+              width: 30px;
+              height: 15px;
+              margin-right: 10px;
+              @include mq(s) {
+                width: 20px;
+                height: 12px;
+                margin-right: 5px;
+              }
+            }
+          }
+          .cat1:before {
+            background-color: #00cec9;
+          }
+          .cat2:before {
+            background-color: #a29bfe;
+          }
+          .cat3:before {
+            background-color: #74b9ff;
+          }
+          .cat4:before {
+            background-color: #ffeaa7;
+          }
+          .cat5:before {
+            background-color: #fab1a0;
+          }
+          .cat6:before {
+            background-color: #e84393;
+          }
+        }
+      }
+    }
+  }
+}
